@@ -1,0 +1,236 @@
+title: "Senior Engineer (Web/Product)"
+name: "Rishi Satsangi"
+location: "LES, NYC"
+phone: "415.786.8815"
+email: "rishi.satsangi@gmail.com"
+skills:
+    -
+        type: "Frontend Engineering"
+        description: "Backbone, Chaplin, Angular, jQuery, underscore, Bootstrap, npm, API consumption, REST API design using RAML, OAuth, service-oriented architecture, OAuth, packaging using composer & npm, Git"
+    -
+        type: "Backend Engineering"
+        description: "PHP, Node, Python, Zend, Symfony, Slim, Silex, Express, Socket.js"
+    -
+        type: "Product Engineering"
+        description: "Business model to code analysis, Architecting for scalability, Usage tracking analytics reporting to inform product iteration (Google Analytics, Segment, Piwik, Fullstory)"
+    -
+        type: "API Integrations"
+        description: "Instagram, Twitter, Facebook, Flickr, Google+, LinkedIn, Bandsintown, Dropbox, Youtube, Vimeo, Soundcloud"
+    -
+        type: "Cartoons"
+        description: "Illustration & animation (Corel Painter, Photoshop, Illustrator, Harmony, paper and pencil), Storyboarding, Character Design"
+summary: >
+    Don't hire me all I do is watch cat videos
+experience:
+    -
+        organization: "The Orchard"
+        location: "NYC"
+        url: "http://theorchard.com"
+        title: "Senior Software Engineer"
+        term: "Fulltime"
+        start: "October 2014"
+        end: "Current"
+        description: >
+            The Orchard does everything IODA did (see below) and more. Film ingestion, YouTube content matching for licensing revenue, sales heatmaps over maps, and a vibrant product department coming up with new ideas puts this company at the forefront of enterprise digital content distribution and analytics.
+        details:
+            - >
+                Writing tech designs for peer review for new development with technology recommendations and detailed scope and estimation.
+            - >
+                Work on Music Distro team, where most of the revenue comes from.
+            - >
+                Requires understanding of entire engineering architecture including ETL processes and delivery vectors in order to deliver to our clients based on a promised SLA.
+    -
+        organization: "Salesforce / BuddyMedia"
+        location: "San Francisco, CA / NYC"
+        url: "http://buddymedia.com"
+        title: "Senior Software Engineer"
+        term: "Fulltime"
+        start: "December 2011"
+        end: "October 2014"
+        description: >
+            Buddy Media, now acquired by Salesforce.com, provides a platform for enterprise brands to operate social media campaigns. The platform includes scheduled posts, analytics, deep listening, engagement, and team based workflow.
+        details:
+            - >
+                Primary architect and engineer for project in collaboration with Twitter to provide age screening for brands: http://age.twitter.com. The project earned a deep relationship with Twitter. Techcrunch article: http://techcrunch.com/2012/07/12/twitter-age-screening.
+            - >
+                Senior engineer position on the core engineering team, which provides core platform infrastructure for the other engineering teams (analytics, engagement, publishing, etc)
+            - >
+                Using websockets to provide real-time notifications in web platform UI to help with the realtime team-based workflow
+    -
+        organization: "Cibo Studios"
+        location: "San Francisco, CA"
+        url: "http://cibostudios.com"
+        title: "Senior Software Engineer"
+        term: "Contracting"
+        start: "June 2011"
+        end: "September 2011"
+        description: >
+            Cibo Studios is a startup design and advertising agency in digital, print, and public spaces, located in the Bay Area.
+        details:
+            - >
+                Project management, client facing (settings expectations, giving estimates)
+            - >
+                Managing bug and feature queues with the international teams in India and Ukraine
+            - >
+                Building iOS ads from the creative team assets
+    -
+        organization: "Clean Power Finance"
+        location: "San Francisco, CA"
+        url: "http://cleanpowerfinance.com"
+        title: "Senior Software Engineer"
+        term: "Fulltime"
+        start: "March 2011"
+        end: "June 2011"
+        description: >
+            CPF (Clean Power Finance) makes solar and other renewable energy consumption available to the residential consumer. Their software platform helps solar installers match up solar hardware configurations (solar panels, inverters, etc) with financing options to make alternative energy affordable for the home.
+        details:
+            - >
+                Rapid application development by building Zend/jQuery infrastructure abstracting any business logic
+            - >
+                Integrating the platform with credit screening (Experian) and other finance APIs
+            - >
+                Working closely with engineering team to build an abstraction layer to integrate legacy/non-standard components into the codebase
+    -
+        organization: "IODA (Now part of the Orchard)"
+        location: "San Francisco, CA"
+        url: "http://iodalliance.com"
+        title: "Senior Software Engineer"
+        term: "Fulltime"
+        start: "August 2005"
+        end: "March 2011"
+        description: >
+            IODA (Independent Online Distribution Alliance) is a leader in the digital music distribution and marketing industry. Their services offer a steamlined content distribution platform including encoding, delivery of audio and metadata to retail services (iTunes, Rhapsody, Google Play, etc), sales data ingestion, promotional and sales reporting, and checks cut to labels monthly! IODA also offers a marketing platform based on the passionate music bloggers and podcasters out there by allowing them use of pre-cleared licensed tracks for use in their publications. Record labels can communicate with these new school publishers with suggested content based on the blogger or podcaster's genre preferences.
+        details:
+            - >
+                Moving complex music industry logic out of duplicated codebases in PERL and PHP to an internal webservice to speed up development and maintenance time by putting complex and changing business logic behind a single node (a web service API abstraction)
+            - >
+                MySQL schema alterations, fixing indexes and queries for performance
+            - >
+                Communicating with production, label representation, and marketing departments to gather new and evolving business requirements, and then create feature request stories for the engineering development queue
+            - >
+                Participating in the initial creation and patenting of Promonet, an engine to find pre-cleared promotional tracks from independent record labels for use by bloggers and podcasters to publish. Promotional activity reports are then available to record labels when they login to the IODA dashboard. Patent: http://www.patentbuddy.com/Company/Profile/IODA/433851
+    -
+        organization: "NACCRRA"
+        location: "Washington, DC"
+        url: "http://naccrra.org"
+        title: "Web Engineer / Designer"
+        term: "Fulltime"
+        start: "August 2004"
+        end: "August 2005"
+        description: >
+             NACCRRA, the National Association of Child Care Resource & Referral Agencies, is our nation's leading voice for child care working with more than 700 state and local Child Care Resource and Referral agencies nationwide. These agencies give the nation information about high quality and accredited child care agencies in their area. Accreditation is done through a program involving close communication with NACCRRA staff.
+        details:
+            - >
+                Maintaining http://www.naccrra.org, http://www.nrex.org., http://www.childcareware.org, and assisting with http://www.naccrraware.net.
+            - >
+                Building custom report generators to tabulate data from online forms
+            - >
+                Built conference registration and organization system for yearly NACCRRA conferences to stop using a paper process (PHP, Javascript, MySQL)
+            - >
+                Built quality assurance application to replace the all-paper system previously used to give official accreditation to child care centers across the United States (PHP, Javascript, MySQL). With the /admin section replacing the huge amounts of paper, the speed of processing applications was drastically increased
+            - >
+                Sending mass emails to NACCRRA members on Congressional public policy updates and NACCRRA news
+            - >
+                Print design for mailers and presentations
+    -
+        organization: "Direct Affect"
+        location: "Reston, VA"
+        url: null
+        title: "Web Engineer / Designer"
+        term: "Fulltime"
+        start: "December 2003"
+        end: "August 2004"
+        description: >
+             Direct Affect was the new digital marketing sister company to Fraser Wallace, a successful DC, Northern VA and Southern MD print marketing and advertising agency. Direct Affect created interactive work and emerging real estate property brochure sites.
+        details:
+            - >
+                Taking HTML generated by designers and adding a backend to store condominium presale inquiries in DC and northern Virginia
+            - >
+                Adding consumer inquiry reporting to client property sites
+            - >
+                Patching up some seriously legacy code
+            - >
+                Self executing Flash interactive floorplan demos for use in showroom kiosks
+            - >
+                Managing clients' email marketing web tools (e.g. MailChimp)
+            - >
+                Built extranet for clients to login and check progress, and build company intranet with a digital suggestion box which I'm not sure was such a good idea as I had access to the "suggestions" :(
+    -
+        organization: "Mindbender Studios"
+        location: "Durham, NC"
+        url: null
+        title: "Web Developer / Designer"
+        term: "Parttime, remote"
+        start: "April 2002"
+        end: "July 2003"
+        description: >
+             Mindbender Studios was a web and creative agency in the Research Triangle area.
+        details:
+            - >
+                Coding HTML and Javascript maintenance on existing client sites
+            - >
+                Creating PERL based form back-ends to record submissions.
+            - >
+                Converting Photoshop templates to HTML
+            - >
+                Providing consultation on design based on client specs
+            - >
+                Managing clients' email marketing web tools
+            - >
+                Hand drawing concept sketches for design of characters for an in-house animation project: http://www.flickr.com/photos/teafordinner/1551974863.
+    -
+        organization: "Ohio State University Web Staff"
+        location: "Columbus, OH"
+        url: null
+        title: "Web Developer / Designer"
+        term: "Parttime, on-campus"
+        start: "September 1998"
+        end: "April 2002"
+        description: >
+             In 1998 there was really more of a problem of finding information on an emerging Internet. Google and Wikipedia weren't around so most of the Web Staff's department was information indexing and providing support for faculty that needed to make a website for their classes or some project.
+        details:
+            - >
+                Interpreting client requirements and offering solutions as to which technology to use
+            - >
+                Using maintainable coding practices and creating documentation for future programmers, which I did not have!Creating PERL based form back-ends to record submissions.
+            - >
+                Assisting in the initiation of new web usability standards (for the deaf and visually impaired)
+            - >
+                Providing consultation on design based on client specs
+education:
+    -
+        organization: "The Ohio State University"
+        location: "Columbus, OH"
+        degree: "BS Computer Science"
+        graduation: "April 2002"
+        description: null
+        details:
+            - >
+                Object oriented programming, mostly in C++ and also Java
+            - >
+                Basic data structure designs and usage (classes, queues, stacks, lists, arrays, sets)
+            - >
+                Hardware architecture (x86, MIPS, memory design, I/O)
+            - >
+                Algorithm performance analysis
+            - >
+                Shortest path algorithms (maps)
+            - >
+                Entity-relationship modeling within relational databases
+            - >
+                Requirements analysis, structure planning, documentation
+other:
+    details:
+            - >
+                Illustration: My portfolio of drawings, digital art, and some animation: http://rishisatsangi.com. I began a Masters in Illustration at the Academy of Art University in San Francisco but I stopped because it was too expensive.
+            - >
+                Music: Music is good for everyone. I play some guitar and the keys. Nothing big but it is fun and keeps me out of trouble.
+            - >
+                Food: I am constantly trying to learn my mom's amazing Indian recipes and expand on them by cross breeding culturally because I am into global food history because I am a nerd.
+
+additional:
+    details:
+            - >
+                I am a U.S. Citizen
+            - >
+                References available upon request

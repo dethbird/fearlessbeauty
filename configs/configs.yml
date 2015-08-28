@@ -1,0 +1,205 @@
+comics:
+  tweetstream-and-zeitgeist:
+    title: "Tweetstream and Zeitgeist in: On the Scene!"
+    parts:
+      -
+        title: "Part 1/3"
+        panels:
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-1/01.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-1/02.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-1/03.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-1/04.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-1/05.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-1/06.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-1/07.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-1/08.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-1/the_end.jpg"
+      -
+        title: "Part 2/3"
+        panels:
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-2/01.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-2/02.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-2/03.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-2/04.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-2/05.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-2/06.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-2/07.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-2/08.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-2/09.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-2/the_end2.jpg"
+      -
+        title: "Part 3/3"
+        panels:
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-3/01.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-3/02.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-3/03.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-3/04.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-3/05.jpg"
+          - "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-3/the_end3.jpg"
+portfolio:
+  - 
+    title: "Sauced Octopus"
+    year: "2008"
+    medium: "pencil, Painter, Photoshop"
+    category: "Illustration"
+    type: "image"
+    content: "https://farm3.staticflickr.com/2473/3692721420_0cee6cd9d2_b.jpg"
+    description: "Just an illustration I used to sell prints of."
+  - 
+    title: "Cute Animals (animatic)"
+    year: "2007"
+    medium: "pencil, Photoshop, Flash"
+    category: "Animation"
+    type: "embed"
+    content: >
+      <iframe width="900" height="504" src="https://www.youtube.com/embed/iRTw-bKBIeI" frameborder="0" allowfullscreen></iframe>
+    description: "An animatic for the song \"Cute Animals\" by Gary Wertz. https://www.youtube.com/embed/iRTw-bKBIeI"
+  - 
+    title: "Eyeguy Animation Test"
+    year: "2007"
+    medium: "pencil, Painter, Photoshop, Flash"
+    category: "Animation"
+    type: "embed"
+    content: >
+      <iframe width="900" height="504" src="https://www.youtube.com/embed/MVC4mg46haM" frameborder="0" allowfullscreen></iframe>
+    description: "A character test for Eyeguy at the office. https://www.youtube.com/watch?v=MVC4mg46haM"
+  - 
+    title: "Tweetstream and Zeitgeist in: On the Scene"
+    year: "2014"
+    medium: "Painter"
+    category: "Comic"
+    type: "image"
+    content: "http://images.rishisatsangi.com/comics/life-in-the-cloud/on-the-scene-part-1/02.jpg"
+    description: >
+      Twitter and Google have their own superheroes - Tweetstream and Zeitgeist, respectively.
+      [Check out the comic here](/comics/tweetstream-and-zeitgeist).    
+  - 
+    title: "masthead for learning to experiment blog"
+    year: "2009"
+    medium: "Painter"
+    category: "Illustration"
+    type: "image"
+    content: "https://farm4.staticflickr.com/3419/3918604896_948bb5fb23_b.jpg"
+    description: "A masthead for a friend's cooking blog"
+  - 
+    title: "audio van gogh - driving music (cd insert inside)"
+    year: "2004"
+    medium: "Maya, Photoshop, InDesign"
+    category: "Print Design"
+    type: "image"
+    content: "https://farm4.staticflickr.com/3200/2852136437_6aa93fa9bc_o.jpg"
+    description: "CD insert art for artist Audio Van Gogh"
+  - 
+    title: "CD Album art |  Routine Life by John hRuby"
+    year: "2009"
+    medium: "Photography, Illustrator, Photoshop"
+    category: "Print Design"
+    type: "image"
+    content: "https://farm5.staticflickr.com/4041/4211926998_89a464b489_b.jpg"
+    description: "CD case cover for album by John Hruby http://www.iheart.com/artist/john-hruby-288206/"
+  - 
+    title: "My Mango Tango Book Cover"
+    year: "2011"
+    medium: "Painter, Photoshop, Illustrator"
+    category: "Print Design"
+    type: "image"
+    content: "https://farm8.staticflickr.com/7130/7751591522_8dcca9f7ed_b.jpg"
+    description: "A book cover for author Nisha Mathur about an indian woman assimilating in the US."
+  - 
+    title: "The Dwarves Website"
+    year: "2006"
+    medium: "Photoshop, Dreamweaver, Wordpress, PHP, MySQL, HTML, Flash, Javascript, CSS"
+    category: "Web Development / Design"
+    type: "image"
+    content: "https://farm4.staticflickr.com/3060/2852102371_9f5d32ba0e_o.jpg"
+    description: "Website for the Dwarves http://thedwarves.com\n* Image uploading with automatic resizing\n* \"Gallerain\" Flash/MySQL based image rotator\n* Integrated WordPress blog\n* Presskit Hi-res media uploads"
+  - 
+    title: "Bandbajgayi.com"
+    year: "2015"
+    medium: "Photoshop, PHP, HTML, Javascript, CSS"
+    category: "Web Development / Design"
+    type: "image"
+    content: "https://farm1.staticflickr.com/689/20249444023_21650c811e_b.jpg"
+    description: "This is my own wedding website which I designed with my wife :) -- fully functional feature-rich wedding website. I can make one for you. http://bandbajgayi.com"
+  - 
+    title: "Beepo Takes A Pipe To Nowhere"
+    year: "2010"
+    medium: "pencil, Painter, Photoshop"
+    category: "Illustration"
+    type: "image"
+    content: "https://farm3.staticflickr.com/2439/3663515635_1c89de110c_b.jpg"
+    description: "Beepo is a robot built by Japanese robotics engineers with whatever information they had about Italian stereotypes. Upon his activation they uploaded the occupation \"plumber\" into his main fucking memory.\nIn this world there are no humans around but somehow he always has a pipe to clean out or something to unclog. It's a very septic life. He tends to drink and do a lot of drugs, even on the job.\nBut he also has a stereotypically Italian lust for life, and he sings Opera to all the beautiful women ... robots. Women robots.\nThis piece is concept art for a mini film starring the one and only Beepo Beeparelli"
+  - 
+    title: "Burger Pope Ad"
+    year: "2007"
+    medium: "pencil, Painter, Photoshop"
+    category: "Illustration"
+    type: "image"
+    content: "https://farm2.staticflickr.com/1156/1467947071_28963a1d91_o.jpg"
+    description: "Burger Pope!"
+  - 
+    title: "Beepo Concept Art"
+    year: "2009"
+    medium: "Painter"
+    category: "Character Design"
+    type: "image"
+    content: "https://farm3.staticflickr.com/2533/3996839316_699ee275b7_b.jpg"
+    description: "Character designs for Beepo Beeparelli"
+  - 
+    title: "Beepo Doesn't Get Turtles"
+    year: "2010"
+    medium: "pencil"
+    category: "Character Design"
+    type: "image"
+    content: "https://farm3.staticflickr.com/2786/4326820558_3db6e6beee_b.jpg"
+    description: "Character design for Beepo Beeparelli"
+  - 
+    title: "Uranium 239 Pops"
+    year: "1997"
+    medium: "Painter"
+    category: "Illustration"
+    type: "image"
+    content: "https://farm1.staticflickr.com/175/461988892_d37e43bae6_o.jpg"
+    description: "Character design for Beepo Beeparelli"
+
+instagrams:
+  - "29N7rtRZv1"
+  - "tcy7cYRZnx"
+  - "380qewxZge"
+  - "3uHYLuRZlb"
+  - "yYZoXQRZkN"
+  - "vc7IPSRZsn"
+  - "5db319RZhm"
+  - "5ABC-HRZqR"
+  - "4PCa-pRZmZ"
+  - "3wvYyjRZpd"
+  - "yQ1lEuxZpN"
+  - "yQTZCBRZrf"
+  - "u5wbHzRZun"
+  - "uR78SDRZtK"
+  - "sYSmxvxZrg"
+  - "sXDHZqxZvv"
+  - "rsRCrlRZgo"
+  - "rrz7KdRZpy"
+  - "rZ9Yb5RZrp"
+  - "pXWC2IRZj3"
+  - "oUPK8VRZmh"
+  - "kGPqj1xZhs"
+
+tweets:
+  - "175800300060409856"
+  - "180488009832079361"
+  - "178887690022952960"
+  - "125270555170582529"
+  - "484708370805313536"
+  - "449610572758515712"
+  - "336235368468856832"
+  - "517053689144430593"
+  - "240906118694596608"
+  - "201170247078772737"
+  - "317507453195542528"
+
+wpposts:
+  - 47
+  - 116
+  - 1

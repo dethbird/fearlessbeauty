@@ -1,0 +1,10 @@
+{
+    "require": {
+        "slim/slim": "~2.0",
+        "slim/extras": "~2.0",
+        "slim/views": "~0.1",
+        "guzzle/guzzle": "~3.7",
+        "symfony/yaml": "~2.7",
+        "twig/twig": "~1.2"
+    }
+}

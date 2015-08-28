@@ -1,0 +1,39 @@
+body {
+    color: white;
+}
+section, header {
+    background: none;
+    text-align: center;
+    max-width: 960px;
+}
+#viewer {
+    width: 960px;
+    height: 800px;
+    text-align: center;
+}
+#viewer img {
+    padding:10px;
+    max-width: 800px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.thumbnail {
+    background: none;
+    max-height: 40px;
+    height: auto;
+    display: inline-block;
+    border: none;
+}
+.thumbnail img {
+    cursor: pointer;
+    max-width: 32px;
+    height: auto;
+    opacity: 0.5;
+}
+.thumbnail img:hover {
+    opacity: 1;
+}
+.thumbnail img.active {
+    opacity: 1;
+}
