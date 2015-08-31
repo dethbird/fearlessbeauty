@@ -1,151 +1,21 @@
 {% extends 'layout.html.twig' %}
 {% block head %}
     {{parent()}}
-    <meta property="og:url"                content="http://dethbird.com" />
-    <meta property="og:type"               content="profile" />
-    <meta property="og:title"              content="Rishi Satsangi #cartoons #technology" />
-    <meta property="og:description"        content="Outta my way, kid. Ya' bother me. I got cartoons to make." />
-    <meta property="og:image"              content="http://dethbird.com/img/og_image.jpg" />
-    <script type="text/javascript">
-      var comicsJson = {{comics|json_encode|raw}};
-      var portfolioItemJson = {{portfolio|json_encode|raw}};
-      var instagramPostIds = {{instagrams|json_encode|raw}};
-      var twitterTweetIds = {{tweets|json_encode|raw}};
-      var wpPostIds = {{wpposts|json_encode|raw}};
-    </script>
     <script type="text/javascript" src="js/views/index.js"></script>
 {% endblock %}
 {% block body %}
 	{{ parent() }}
-    <header id="logo"><img src="img/1280/logo.png"></header>
-    <a class="btn btn-success btn-lg" id="great_button">Great!</a>
-    <section id="intro"></section>
-
-    <header id="portfolio-title"></header>
-    <section id="portfolio">
-      <a class="btn btn-primary" id="portfolio-random-button">Random <span class="glyphicon glyphicon-refresh"></span></a><br class="clearfix" />
-      <div class="random-post"><br /><br /><img src="img/ajax-loader.gif" /></div>
-    </section>
-
-    <header id="about-title"></header>
-    <section id="about">
-      <table>
-        <tr>
-          <td>
-            <h1>#cartoons</h1>
-            <ul>
-              <li>Character design</li>
-              <li>Comedic screenplay writing</li>
-              <li>Storyboarding/pacing</li>
-              <li>Timing to music</li>
-              <li>Keyframing</li>
-            </ul>
-            <p>I am interested in producing creative projects with YOU. This is it. Cartoons are everything. You ever walk away from a fight and not do anything? But when you walk away you imagine an anvil or piano smashing their faces? That's how my mind works! Like a cartoon! And I want to work with YOUUUUU.</p>
-            <p>Let's do business.</p>
-            <!--<h1>#creative</h1>
-            <ul>
-              <li>Web design</li>
-              <li>Poster/flyer design</li>
-              <li>Book covers</li>
-              <li>I suck at logos don't ask me</li>
-            </ul>-->
-          </td>
-          <td>
-            <h1>#technology</h1>
-            <ul>
-              <li>LAMP Stack PHP/MySQL/Apache</li>
-              <li>API design using RAML (open sourced)</li>
-              <li>Backend: Symfony/Doctrine, Zend, Slim/ActiveRecord</li>
-              <li>Frontend: jQuery/Backbone/Angular</li>
-              <li>AWS: EC2, SWF, Redshift, DynamoDb</li>
-              <li>WebRTC: Node.js</li>
-              <li>Responsive web design</li>
-            </ul>
-            <p>I made this god damn <a href="https://github.com/dethbird/rishisatsangi.com.v2.0" target="_blank">website</a>. I work fulltime as a senior engineer, but I enjoy helping people out with my cyberwebbing and create-o abilities. I have worked with non-profits, artists, musicians, educational organizations, and others, in the service of freelance web design and development.</p>
-            <p>Let's do business.</p>
-          </td>
-        </tr>
-      </table>
-    </section>
-
-    <header id="info-title"></header>
-    <section id="info">
-      <table>
-        <tr>
-          <th><h1>on le cyberweb</h1></th>
-          <th><h1>contact me</h1></th>
-        </tr>
-        <tr>
-          <td>
-            <a class="btn btn-primary" id="post-random-button">Random <span class="glyphicon glyphicon-refresh"></span></a>
-            <br class="clearfix" /><br />
-            <div class="random-post"><br /><br /><img src="img/ajax-loader.gif" /></div>
-          </td>
-          <td>
-            <div class='details'>
-              <p>I'm located in NYC. Here's how you can find me.</p>
-              <ul>
-                <li><a href="tel:415-786-8815" target="_blank" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-phone"></span> 415.786.8815</a></li>
-                <li><a href="/resume" target="_blank" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-file"></span> Résumé</a></li>
-                <li><a href="https://twitter.com/dethbird" target="_blank"><img src="img/logo-twitter-24.png" /></a> @dethbird</li>
-                <li><a href="https://instagram.com/dethbird" target="_blank"><img src="img/logo-instagram-24.png" /></a> @dethbird</li>
-              </ul>
-              <p>Let's do business.</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-    </section>
-
-    <span id="test_tweet"></span>
-    <script type="text/template" id="post-portfolio">
-      <div class="post portfolio">
-        <div class="content">
-          <% if (type == "embed") { %>
-            <br />
-            <%=content%>
-          <% } else { %>
-            <img src="<%-content%>" />
-          <% }  %>
+    <div class="container" id="home-header">
+        <div id="logo-main"></div>
+        <div id="home-info"><button class="btn btn-lg btn-success pull-right"><span class="glyphicon glyphicon-gift"></span> Donate</button> Teaching fundamental skills in one of the great crafts empowers people.<br /> When those people are underprivileged women, it has the power to change their lives.</div>
+    </div>
+    <div class="container contentBody">
+        <div class="col-xs-6">
+            <h1>Our Blog</h1>
         </div>
-        <br />
-        <h1><%-title%></h1>
-        <div class="category-year-medium"><%-category%> (<%-year%>) <%-medium%></div>
-        <div class="description"><%-description%></div>
-      </div>
-    </script>
-    <script type="text/template" id="post-comics">
-      <div class="post comics">
-        the comic
-      </div>
-    </script>
-    <script type="text/template" id="post-instagram">
-      <div class="post instagram">
-        <a href="<%-link%>" target="_blank"><img src="<%-images.standard_resolution.url%>" /></a>
-        <br />
-        <div class="description"><%-caption.text%></div>
-        <div><a class="btn btn-default btn-sm pull-right" href="<%-link%>" target="_blank"><img src="img/logo-instagram-24.png" /> View</a></div>
-      </div>
-    </script>
-    <script type="text/template" id="post-wordpress">
-      <div class="post wordpress">
-        <h4><%=title.rendered%></h4>
-        <% if (featured_image.media_details) { %>
-          <% if (featured_image.media_details.sizes['post-thumbnail']) { %>
-            <img src="<%-featured_image.media_details.sizes['post-thumbnail'].source_url%>" />
-          <% } else { %>
-            <img src="<%-featured_image.source_url%>" />
-          <% } %>
-        <% } %>
-        <p><%=excerpt.rendered%></p>
-        <p><a class="btn btn-default btn-sm pull-right" href="<%-link%>" target="_blank"><img src="img/logo-wordpress-24.png" /> View</a></p>
-      </div>
-    </script>
-    <script type="text/template" id="post-twitter">
-      <div class="post twitter">
-        <div class="tweet"></div>
-      </div>
-    </script>
-
+        <div class="col-xs-6">
+            <h1>Interviews</h1>
+        </div>
+    </div>
 {% endblock %}
 

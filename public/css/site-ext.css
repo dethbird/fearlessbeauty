@@ -1,299 +1,69 @@
+
 /** Default settings for 1280px+ displays */
 body {
+    color: white;
     margin-bottom: 100px;
-    text-shadow: 1px 2px 4px #000;
-    background-color: #000;
-    font-family: 'Noto Sans', sans-serif;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+    background-color: #d10841;
+    /*background-color: #444;*/
+    font-family: 'Magra', sans-serif;
 }
-section {
-    border-radius: 50px 0px 50px 50px;
-    margin-bottom: 5px;
-    background-color: #000;
+.container {
+    padding: 0;
 }
-a {
-    color: #f5b20a;
+.container.contentBody {
+    min-height: 500px;
+    background-color: white;
+    color: #444;
+    padding: 0px 43px 0px 43px;
 }
-a.btn {
-    text-shadow: none;
-}
-.body-content {
-}
-
-
-.headshot {
-    border-radius: 50px;
-}
-.tagline {
+ul.nav {
     float:right;
 }
-#great_button {
-    position: absolute;
-    top: 650px;
-    margin-left: -100px;
-    z-index: 1001;
+ul.nav button {
+    margin-top: 10px;
 }
-#logo {
-    position: absolute;
-    width: 1200px;
-    height: 700px;
-    z-index:1000;
-}
-#intro {
-    background-image: url("../img/1280/intro.background.jpg");
-    background-repeat: no-repeat;
-    min-height: 675px;
-    margin-top: 80px;
+h1,h2,h3,h4,h5 {
+    font-family: 'Neuton', serif;
+    font-weight: bold;
+    color: #5FAD56;
 }
 
-#portfolio-title {
-    position: absolute;
-    background-image: url("../img/1280/portfolio.title.png");
-    background-repeat: no-repeat;
-    width: 376px;
-    height: 151px;
-    top: 800px;
-    z-index:1000;
-    margin-left:25px;
-}
-#portfolio {
-    background-image: url("../img/1280/portfolio.background.jpg");
-    background-repeat: no-repeat;
-    background-color: #010101;
-    height: 920px;
-    margin-top: 90px;
-    margin-bottom: 15px;
-    text-align: center;
-    color: white;
-    padding:25px;
-}
-#portfolio .post img {
-    margin-top: 15px;
-    max-height: 600px;
-    width: auto;
-    border-radius: 10px;
-}
-#portfolio .post.instagram img {
-    margin-bottom:10px;
-}
-
-#portfolio .post .btn img {
-    margin :0px;
-    border-radius: 2px;
-}
-#portfolio .post.portfolio .category-year-medium,
-#portfolio .post .description {
-    margin: 0px 100px 10px 100px;
-    font-size:12px;
-    display: inline-block;
-    width: 700px;
-}
-#portfolio .post .description {
-    text-align: left;
-    font-size: 13px;
-}
-#portfolio .post.instagram .description {
-    width: 640px;
-}
-
-#about-title {
-    position: absolute;
-    background-image: url("../img/1280/about.title.png");
-    background-repeat: no-repeat;
-    width: 438px;
-    height: 113px;
-    top: 1780px;
-    z-index:1000;
-    margin-left:25px;
-}
-#about,
-#info {
-    color: white;
-    background-image: url("../img/1280/about.background.jpg");
-    background-repeat: no-repeat;
-    min-height: 675px;
-    margin-top: 100px;
-}
-#info {
-    color: #fff;
-    background-image: url("../img/1280/info.background.jpg");
-    height:800px;
-}
-#about table,
-#info table {
-    margin: 75px 100px 0px 100px;
-    width: 1000px;
-}
-#info table {
-    margin: 25px 50px 0px 50px;
-}
-#about table td,
-#info table td {
-    padding-right:25px;
-    vertical-align: text-top;
-}
-#info .post,
-#info .details {
-    padding: 10px;
-    /*background-image: url("../img/white.transparent.png");*/
-    border-radius: 25px;
-    width: 450px;
-}
-#info .post {
-    width: 600px;
-}
-#info .post.wordpress p,
-#info .post.instagram p  {
-    width:450px;
-    text-align: left;
-    margin:10px;
-}
-#info .post.instagram img,
-#info .post.wordpress img {
-    max-width: 450px;
-    height: auto;
-    display: inline-block;
-    border-radius: 10px;
-}
-#info .post.twitter {
-    height: 500px;
-    overflow: auto;
-}
-#info-title {
-    position: absolute;
-    background-image: url("../img/1280/info.title.png");
-    background-repeat: no-repeat;
-    width: 376px;
-    height: 151px;
-    top: 2575px;
-    z-index:1000;
-    margin-left:25px;
-}
-#info li {
-  margin: 5px 0;
-  font-size:12px;
-}
-
-/** Responsive */
-@media screen and (min-width:0px) {
-    section {
+@media screen and (min-width:1200px) {
+    #home-header {
+        width: 1170px;
+        height: 779px;
+        background-image: url('../img/1200/home.header.background.jpg');
+        /*background-image: url('http://lorempixel.com/g/1170/779/food/');*/
+        background-repeat: no-repeat;
+        padding: 0px 43px 0px 43px;
     }
-    .body-content {
+    #home-info {
+        padding:10px;
+        background-color: rgba(0,0,0,0.5);
+        font-size: 24px;
+        margin-top: 390px;
+        border-radius: 10px;
+        border-top: 1px inset #ccc;
+        border-bottom: 1px inset #444;
+        border-left: 1px inset #aaa;
+        border-right: 1px inset #aaa;
+        box-shadow: 10px 10px 25px -9px rgba(0,0,0,0.75);
+    }
+    #logo-main {
+        margin: 17px 0px 0px 0px;
+        width: 679px;
+        height: 243px;
+        background-image: url('../img/1200/logo-main.png');
+        background-repeat: no-repeat;
+    }
+    #logo-mini {
+        margin-right: 5px;
+        width: 30px;
+        height: 40px;
+    }
+    #logo-mini img {
+        margin: 5px 0px 0px 0px;
+        vertical-align: middle;
     }
 }
-
-@media screen and (min-width:640px) {
-    section {
-    }
-    .body-content {
-    }
-}
-
-@media screen and (min-width:960px) {
-    #logo {
-        margin-left:-150px;
-    }
-    #logo img {
-        width: 960px;
-        height: auto;
-    }
-    #great_button {
-        top: 500px;
-    }
-    #intro {
-        background-image: url("../img/900/intro.background.jpg");
-        min-height: 506px;
-    }
-    #portfolio {
-        background-image: url("../img/900/portfolio.background.jpg");
-        min-height: 640px;
-    }
-    #portfolio-title {
-        top: 625px;
-    }
-    #portfolio .post img {
-        max-height: 550px;
-        max-width: 850px;
-    }
-    #about-title {
-        top: 1615px
-    }
-    #about {
-        background-image: url("../img/900/about.background.jpg");
-        min-height: 540px;
-    }
-    #about table,
-    #info table {
-        margin: 50px 0px 0px 25px;
-        width: 850px;
-    }
-    #info-title {
-        top: 2275px;
-    }
-    #info {
-        background-image: url("../img/900/info.background.jpg");
-    }
-    section, header {
-        width: 960px;
-    }
-    .body-content {
-    }
-    #info .random-post {
-        width: 450px;
-    }
-}
-
-@media screen and (min-width:1280px) {
-    #logo {
-        margin-left:0px;
-    }
-    #logo img {
-        width: 100%;
-        height: auto;
-    }
-    #great_button {
-        top: 650px;
-    }
-    #intro {
-        background-image: url("../img/1280/intro.background.jpg");
-        min-height: 675px;
-    }
-    #portfolio {
-        background-image: url("../img/1280/portfolio.background.jpg");
-        min-height: 920px;
-    }
-    #portfolio-title {
-        top: 800px;
-    }
-    #portfolio .post img {
-        max-width: 1150px;
-        max-height: 600px;
-    }
-    #about-title {
-        top: 1780px;
-    }
-    #about {
-        background-image: url("../img/1280/about.background.jpg");
-        min-height: 675px;
-    }
-    #about table,
-    #info table {
-        margin: 75px 100px 0px 100px;
-        width: 1000px;
-    }
-    #info-title {
-        top: 2575px;
-    }
-    #info {
-        background-image: url("../img/1280/info.background.jpg");
-    }
-    section, header {
-        width: 1280px;
-    }
-    .body-content {
-    }
-    #info .random-post {
-        width: 100%;
-    }
-}
-
-
