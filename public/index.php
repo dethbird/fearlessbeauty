@@ -55,6 +55,22 @@ $app->get("/", $authenticate($app), function () use ($app) {
 
 $app->get("/posts/:type", $authenticate($app), function ($type) use ($app) {
 
+    // $configs = $app->container['configs'];
+    // $client = new Guzzle\Http\Client();
+    // $response = $client->get(
+    //     "https://www.googleapis.com/youtube/v3/videos?part=snippet&id=" . urlencode(implode(",", $configs['featured']['youtube'])) . "&key=AIzaSyCybIgvVt-vmF47yFzmKqGYXHe8r1LOzJs"
+    // )->send();
+    
+    // var_dump($response->getBody(true)); die();
+
+
+
+// $.getJSON('https://noembed.com/embed',
+//     {format: 'json', url: url}, function (data) {
+//     alert(data.title);
+// });
+
+
     $client = new Guzzle\Http\Client();
     $app->response->headers->set('Content-Type', 'application/json');
     $data = array();
