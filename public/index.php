@@ -1,6 +1,7 @@
 <?php
 
 require '../vendor/autoload.php';
+require_once '../library/ExternalData/YoutubeData.php';
 
 ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 1);
@@ -27,7 +28,6 @@ $view = $app->view();
 $configs = Yaml::parse(file_get_contents("../configs/configs.yml"));
 $app->container->set('configs', $configs);
 
-
 // This is where a persistence layer ACL check would happen on authentication-related HTTP request items
 $authenticate = function ($app) {
     return function () use ($app) {
@@ -44,32 +44,22 @@ $app->notFound(function () use ($app) {
     );
 });
 
-
 $app->get("/", $authenticate($app), function () use ($app) {
+    $youtubeData = new YoutubeData();
+    $configs = $app->container->get('configs');
     $app->render(
         'partials/index.html.twig',
-        $app->container->get('configs'),
+        array(
+            "configs" => $configs,
+            "embedCodes" => $configs['featured']['videos']['embed_codes'],
+            "youtubeVideos" => $youtubeData->getVideos($configs['featured']['videos']['youtube']),
+            "embedCodeVideos" => $configs['featured']['videos']['embed_codes']
+        ),
         200
     );
 });
 
 $app->get("/posts/:type", $authenticate($app), function ($type) use ($app) {
-
-    // $configs = $app->container['configs'];
-    // $client = new Guzzle\Http\Client();
-    // $response = $client->get(
-    //     "https://www.googleapis.com/youtube/v3/videos?part=snippet&id=" . urlencode(implode(",", $configs['featured']['youtube'])) . "&key=AIzaSyCybIgvVt-vmF47yFzmKqGYXHe8r1LOzJs"
-    // )->send();
-    
-    // var_dump($response->getBody(true)); die();
-
-
-
-// $.getJSON('https://noembed.com/embed',
-//     {format: 'json', url: url}, function (data) {
-//     alert(data.title);
-// });
-
 
     $client = new Guzzle\Http\Client();
     $app->response->headers->set('Content-Type', 'application/json');

@@ -1,5 +1,10 @@
 featured:
-  youtube:
-    - "RgX2HY2iyVQ"
-    - "MbTNItxRq4M"
-    - "Xrg6WX5GJEk"
+  videos:
+    youtube:
+      - "RgX2HY2iyVQ"
+      - "MbTNItxRq4M"
+      - "Xrg6WX5GJEk"
+      - "BbHFvwSaaWU"
+    embed_codes:
+      - >
+        <script type="text/javascript" charset="UTF-8" src="http://www.nbcnewyork.com/portableplayer/?cmsID=279636812&videoID=ZuMzlOULpTKI&origin=nbcnewyork.com&sec=video&subsec=&width=600&height=360"></script>

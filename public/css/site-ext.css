@@ -8,6 +8,9 @@ body {
     /*background-color: #444;*/
     font-family: 'Magra', sans-serif;
 }
+.nav {
+    font-size: 12px;
+}
 .container {
     padding: 0;
 }
@@ -20,7 +23,7 @@ body {
 .container.contentFooter {
     text-align: center;
     padding: 17px 43px 17px 43px;
-}   
+}
 .navbar.footer {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
