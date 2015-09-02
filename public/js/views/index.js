@@ -29,7 +29,6 @@ var PostCollection = Backbone.Collection.extend({
       that.add(model);
     });
     this.trigger('parse');
-    // console.log(this);
   }
 });
 
@@ -53,7 +52,6 @@ var YoutubeVideoCollection = PostCollection.extend({
       that.add(model);
     });
     this.trigger('parse');
-    // console.log(this);
   }
 });
 
@@ -101,12 +99,12 @@ var EmbedCodeVideoCollection = PostCollection.extend({
   }
 });
 
-var youtubes = new EmbedCodeVideoCollection();
+var embedcodes = new EmbedCodeVideoCollection();
 
 /** post viewer */
 var EmbedCodeVideoView = Backbone.View.extend({
   name: "EmbedCodeVideoView",
-  collection: youtubes,
+  collection: embedcodes,
   initialize: function(){
     var that = this;
     this.collection.on('parse', function(){
@@ -117,11 +115,53 @@ var EmbedCodeVideoView = Backbone.View.extend({
   render: function() {
     var that = this;
     _.each(this.collection.models, function(e){
-        // var template = _.template($("#post-" + e.get('type')).html());
         $(that.el).append( e.get('data') );
     });
   }
 });
+
+var WordpressPostCollection = PostCollection.extend({
+  posts: wordpressPosts,
+  type: 'wordpressPosts',
+  fetch: function() {
+    this.parse(this.posts);
+  },
+  parse: function(data) {
+    that = this;
+    _.each(data, function(d){
+      var model = new Post({
+        type: that.type,
+        data: d,
+        id: d.id
+      });
+      that.add(model);
+    });
+    this.trigger('parse');
+  }
+});
+
+var wordpresses = new WordpressPostCollection();
+
+/** post viewer */
+var WordpressPostView = Backbone.View.extend({
+  name: "WordpressPostView",
+  collection: wordpresses,
+  initialize: function(){
+    var that = this;
+    this.collection.on('parse', function(){
+        that.render();
+    });
+    this.collection.fetch();
+  },
+  render: function() {
+    var that = this;
+    _.each(this.collection.models, function(e){
+        var template = _.template($("#post-" + e.get('type')).html());
+        $(that.el).append( template(e.attributes, {escape: false}) );
+    });
+  }
+});
+
 
 $(document).ready(function(){
     var youtubeViewer = new YoutubeVideoView({
@@ -130,6 +170,10 @@ $(document).ready(function(){
 
     var embedCodeViewer = new EmbedCodeVideoView({
       el: $('section#embedCodeVideos')
+    });
+
+    var wordpressViewer = new WordpressPostView({
+      el: $('section#wordpressPosts')
     });
 
 });

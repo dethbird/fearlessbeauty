@@ -2,6 +2,7 @@
 
 require '../vendor/autoload.php';
 require_once '../library/ExternalData/YoutubeData.php';
+require_once '../library/ExternalData/WordpressData.php';
 
 ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 1);
@@ -45,7 +46,12 @@ $app->notFound(function () use ($app) {
 });
 
 $app->get("/", $authenticate($app), function () use ($app) {
+
+
+    // apc_clear_cache();
+
     $youtubeData = new YoutubeData();
+    $wordpressData = new WordpressData();
     $configs = $app->container->get('configs');
     $app->render(
         'partials/index.html.twig',
@@ -53,7 +59,8 @@ $app->get("/", $authenticate($app), function () use ($app) {
             "configs" => $configs,
             "embedCodes" => $configs['featured']['videos']['embed_codes'],
             "youtubeVideos" => $youtubeData->getVideos($configs['featured']['videos']['youtube']),
-            "embedCodeVideos" => $configs['featured']['videos']['embed_codes']
+            "embedCodeVideos" => $configs['featured']['videos']['embed_codes'],
+            "wordpressPosts" => $wordpressData->getPosts($configs['featured']['blogs']['wordpress'])
         ),
         200
     );
