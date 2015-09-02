@@ -58,6 +58,94 @@ section blockquote {
     overflow: auto;
     text-overflow: ellipsis;
 }
+
+#logo-mini {
+    margin-right: 5px;
+    width: 30px;
+    height: 40px;
+}
+#logo-mini img {
+    margin: 5px 0px 0px 0px;
+    vertical-align: middle;
+}
+
+/* min-width: 768 */
+@media screen and (min-width:0px) {
+    section img {
+        max-width: 302px;
+        height: auto;
+    }
+    #home-header {
+        width: 750px;
+        height: 499px;
+        background-image: url('../img/768/home.header.background.jpg');
+        /*background-image: url('http://lorempixel.com/g/1170/779/food/');*/
+        background-repeat: no-repeat;
+        padding: 0px 43px 0px 43px;
+    }
+    #home-info {
+        padding:10px;
+        background-color: rgba(0,0,0,0.5);
+        font-size: 16px;
+        margin-top: 190px;
+        border-radius: 10px;
+        border-top: 1px inset #ccc;
+        border-bottom: 1px inset #444;
+        border-left: 1px inset #aaa;
+        border-right: 1px inset #aaa;
+        box-shadow: 10px 10px 25px -9px rgba(0,0,0,0.75);
+    }
+    #home-info p {
+        width: 500px;
+    }
+    #logo-main {
+        margin: 17px 0px 0px 0px;
+        width: 460px;
+        height: 165px;
+        background-image: url('../img/768/logo-main.png');
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+@media screen and (min-width:992px) {
+    section img {
+        max-width: 442px;
+        height: auto;
+    }
+    #home-header {
+        width: 970px;
+        height: 646px;
+        background-image: url('../img/992/home.header.background.jpg');
+        /*background-image: url('http://lorempixel.com/g/1170/779/food/');*/
+        background-repeat: no-repeat;
+        padding: 0px 43px 0px 43px;
+    }
+    #home-info {
+        padding:10px;
+        background-color: rgba(0,0,0,0.5);
+        font-size: 20px;
+        margin-top: 315px;
+        border-radius: 10px;
+        border-top: 1px inset #ccc;
+        border-bottom: 1px inset #444;
+        border-left: 1px inset #aaa;
+        border-right: 1px inset #aaa;
+        box-shadow: 10px 10px 25px -9px rgba(0,0,0,0.75);
+    }
+
+    #home-info p {
+        width: auto;
+    }
+    #logo-main {
+        margin: 17px 0px 0px 0px;
+        width: 564px;
+        height: 202px;
+        background-image: url('../img/992/logo-main.png');
+        background-repeat: no-repeat;
+    }
+}
 @media screen and (min-width:1200px) {
     section img {
         max-width: 512px;
@@ -89,14 +177,5 @@ section blockquote {
         height: 243px;
         background-image: url('../img/1200/logo-main.png');
         background-repeat: no-repeat;
-    }
-    #logo-mini {
-        margin-right: 5px;
-        width: 30px;
-        height: 40px;
-    }
-    #logo-mini img {
-        margin: 5px 0px 0px 0px;
-        vertical-align: middle;
     }
 }
