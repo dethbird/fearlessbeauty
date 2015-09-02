@@ -70,6 +70,7 @@ var YoutubeVideoView = Backbone.View.extend({
   },
   render: function() {
     var that = this;
+    $(that.el).html('');
     _.each(this.collection.models, function(e){
 
         e.set('width', $(that.el).width());
@@ -114,6 +115,7 @@ var EmbedCodeVideoView = Backbone.View.extend({
   },
   render: function() {
     var that = this;
+    $(that.el).html('');
     _.each(this.collection.models, function(e){
         $(that.el).append( e.get('data') );
     });
@@ -155,6 +157,7 @@ var WordpressPostView = Backbone.View.extend({
   },
   render: function() {
     var that = this;
+    $(that.el).html('');
     _.each(this.collection.models, function(e){
         var template = _.template($("#post-" + e.get('type')).html());
         $(that.el).append( template(e.attributes, {escape: false}) );
@@ -175,6 +178,11 @@ $(document).ready(function(){
     var wordpressViewer = new WordpressPostView({
       el: $('section#wordpressPosts')
     });
+
+    $(window).resize($.debounce(350, function(e){
+      youtubeViewer.render();
+      embedCodeViewer.render();
+    }));
 
 });
 
