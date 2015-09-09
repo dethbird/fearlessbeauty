@@ -47,7 +47,6 @@ $app->notFound(function () use ($app) {
 
 $app->get("/", $authenticate($app), function () use ($app) {
 
-
     // apc_clear_cache();
 
     $youtubeData = new YoutubeData();

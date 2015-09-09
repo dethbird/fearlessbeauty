@@ -1,13 +1,13 @@
 featured:
   videos:
     youtube:
-      - "RgX2HY2iyVQ"
-      - "MbTNItxRq4M"
-      - "Xrg6WX5GJEk"
-      - "BbHFvwSaaWU"
+      - "-r1pSe4-06M"
+      - "EcaXjeQF-eg"
+      - "q4xK7A9mPvo"
+      - "wdsFjOeISYM"
     embed_codes:
       - >
-        <script type="text/javascript" charset="UTF-8" src="http://www.nbcnewyork.com/portableplayer/?cmsID=279636812&videoID=ZuMzlOULpTKI&origin=nbcnewyork.com&sec=video&subsec=&width=600&height=360"></script>
+        <script type="text/javascript" charset="UTF-8" src="http://www.nbcnewyork.com/portableplayer/?cmsID=279636812&videoID=ZuMzlOULpTKI&origin=nbcnewyork.com&sec=on-air&subsec=as-seen-on&width=600&height=360"></script>
   blogs:
     wordpress:
       - 47
