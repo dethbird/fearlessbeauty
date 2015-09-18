@@ -25,7 +25,7 @@ class WordpressData extends DataBase {
                 }
 
                 $data[] = $response;
-            };
+            }
             $this->storeCache($cacheKey, $data, 86400);
             return $data;
         } else {
