@@ -55,9 +55,9 @@ $app->get("/", $authenticate($app), function () use ($app) {
 
     // apc_clear_cache();
 
-    $youtubeData = new YoutubeData();
-    $wordpressData = new WordpressData();
     $configs = $app->container->get('configs');
+    $youtubeData = new YoutubeData($configs['google_api']['key']);
+    $wordpressData = new WordpressData($configs['wordpress_blog']['base_url']);
     $app->render(
         'partials/index.html.twig',
         array(
