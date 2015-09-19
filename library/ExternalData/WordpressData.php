@@ -32,7 +32,7 @@ class WordpressData extends DataBase {
                 $response = json_decode($response->getBody(true));
 
                 if($response->featured_image > 0) {
-                    $mediaResponse = $this->httpClient->get($this->baseUrl . 'wp-json/wp/v2/media/' . $response->featured_image)->send();
+                    $mediaResponse = $this->httpClient->get($this->baseUrl . '/wp-json/wp/v2/media/' . $response->featured_image)->send();
                     $response->featured_image = json_decode($mediaResponse->getBody(true));
                 }
 

@@ -1,5 +1,5 @@
 wordpress_blog:
-  base_url: "http://fearlessbeauty.artistcontrolbox.com"
+  base_url: "http://fearlessbeautyblog.artistcontrolbox.com"
 google_api:
   key: "AIzaSyCybIgvVt-vmF47yFzmKqGYXHe8r1LOzJs"
 instagram:
