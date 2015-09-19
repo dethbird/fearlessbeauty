@@ -19,7 +19,7 @@ class YoutubeData extends DataBase {
                 "https://www.googleapis.com/youtube/v3/videos?part=snippet&id=" . urlencode(implode(",", $videoIds)) . "&key=AIzaSyCybIgvVt-vmF47yFzmKqGYXHe8r1LOzJs"
             )->send();
             $data = json_decode($response->getBody(true));
-            $this->storeCache($cacheKey, $data->items, 86400);
+            $this->storeCache($cacheKey, $data->items);
             return $data->items;
         } else {
             return $cache;
