@@ -56,6 +56,7 @@ $app->get("/", $authenticate($app), function () use ($app) {
         'partials/index.html.twig',
         array(
             "configs" => $configs,
+            "section" => "home",
             "embedCodes" => $configs['featured']['videos']['embed_codes'],
             "youtubeVideos" => $youtubeData->getVideos($configs['featured']['videos']['youtube']),
             "embedCodeVideos" => $configs['featured']['videos']['embed_codes'],
@@ -71,7 +72,21 @@ $app->get("/about", $authenticate($app), function () use ($app) {
     $app->render(
         'partials/about.html.twig',
         array(
-            "configs" => $configs
+            "configs" => $configs,
+            "section" => "about"
+        ),
+        200
+    );
+});
+
+$app->get("/contact", $authenticate($app), function () use ($app) {
+
+    $configs = $app->container->get('configs');
+    $app->render(
+        'partials/contact.html.twig',
+        array(
+            "configs" => $configs,
+            "section" => "contact"
         ),
         200
     );
