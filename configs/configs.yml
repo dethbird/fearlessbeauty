@@ -7,9 +7,10 @@ featured:
       - "wdsFjOeISYM"
     embed_codes:
       - >
-        <script type="text/javascript" charset="UTF-8" src="http://www.nbcnewyork.com/portableplayer/?cmsID=279636812&videoID=ZuMzlOULpTKI&origin=nbcnewyork.com&sec=on-air&subsec=as-seen-on&width=600&height=360"></script>
+        <script type="text/javascript" charset="UTF-8" src="http://www.nbcnewyork.com/portableplayer/?cmsID=279636812&videoID=ZuMzlOULpTKI&origin=nbcnewyork.com&sec=on-air&subsec=as-seen-on&width=500&height=360"></script>
   blogs:
     wordpress:
-      - 47
-      - 116
-      - 1
+      - 794
+      - 121
+      - 778
+blog_url: "http://fearlessbeauty.artistcontrolbox.com"
