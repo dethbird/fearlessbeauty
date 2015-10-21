@@ -169,29 +169,49 @@ var imagesToRotateData = [
   {
     url: "img/rotator/001.jpg",
     tagline: {
-      top: 560,
-      left: 225
+       top: 550,
+       left: 450
+    },
+    logo: {
+      top: 5,
+      left: 15,
+      scale: 0.9
     }
   },
   {
     url: "img/rotator/002.jpg",
     tagline: {
-         top: 560,
-         left: 180
+       top: 580,
+       left: 450
+    },
+    logo: {
+      top: -10,
+      left: -75,
+      scale: 0.6
     }
   },
   {
     url: "img/rotator/003.jpg",
     tagline: {
-      top: 560,
-      left: 275
+      top: 580,
+      left: 50
+    },
+    logo: {
+      top: -25,
+      left: 470,
+      scale: 0.7
     }
   },
   {
     url: "img/rotator/004.jpg",
     tagline: {
-      top: 560,
-      left: 25
+       top: 580,
+       left: 450
+    },
+    logo: {
+      top: -10,
+      left: -75,
+      scale: 0.6
     }
   }
 ];
@@ -223,17 +243,34 @@ var ImageRotatorWithTaglineView = Backbone.View.extend({
         that.currentModel = model;
       }
     });
-    var template = _.template($("#template-banner-tagline").html());
+    var template = _.template($("#template-banner").html());
     $(that.el).append( template({}, {escape: false}) );
+
     $('#banner-tagline').css('z-index', 1000 + this.collection.models.length + 1);
     $('#banner-tagline').css('top', (that.currentModel.get('tagline').top));
     $('#banner-tagline').css('left', (that.currentModel.get('tagline').left));
+
+    $('#banner-logo').css('z-index', 1000 + this.collection.models.length + 2);
+    // $('#banner-logo').css('top', (that.currentModel.get('logo').top));
+    // $('#banner-logo').css('left', (that.currentModel.get('logo').left));
+    // $('#banner-logo').css('scale', (that.currentModel.get('logo').scale));
+     var logoTween = TweenMax.to(
+      $('#banner-logo'),
+      0,
+      {
+        left: this.currentModel.get('logo').left,
+        top: this.currentModel.get('logo').top,
+        scale: this.currentModel.get('logo').scale,
+        ease:Expo.easeOut
+      }
+    );
+
     this.render();
   },
   render: function() {
     setInterval(_.bind(function(){
       this.nextImage();
-    }, this), 10000);
+    }, this), 8000);
   },
   nextImage: function() {
     var that = this;
@@ -248,19 +285,28 @@ var ImageRotatorWithTaglineView = Backbone.View.extend({
         if(model.get('id')==that.currentModel.get('id')) {
           that.currentModel.get('image').fadeIn(1000);
           $('#banner-tagline').css('top', model.get('tagline').top);
-          var tween = TweenMax.to(
+          var taglineTween = TweenMax.to(
             $('#banner-tagline'),
             2,
             {
-              left: model.get('tagline').left,
+              left: that.currentModel.get('tagline').left,
+              top: that.currentModel.get('tagline').top,
               ease:Expo.easeOut
             }
           );
-          // $('#banner-tagline').css('left', (model.get('tagline').left));
+          var logoTween = TweenMax.to(
+            $('#banner-logo'),
+            2,
+            {
+              left: that.currentModel.get('logo').left,
+              top: that.currentModel.get('logo').top,
+              scale: that.currentModel.get('logo').scale,
+              ease:Expo.easeOut
+            }
+          );
         }
       });
     });
-    // this.currentModel.get('image').removeClass('hidden');
   }
 });
 

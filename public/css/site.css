@@ -17,8 +17,8 @@ blockquote {
     font-size: 12px;
 }
 .donate:hover {
-  -webkit-animation: anim-scale-to-1 800ms linear both;
-  animation: anim-scale-to-1 800ms linear both;
+  -webkit-animation: anim-scale-to-1 1000ms linear both;
+  animation: anim-scale-to-1 1000ms linear both;
 }
 .container {
     padding: 0;
@@ -81,6 +81,9 @@ section blockquote {
 #home-header img {
     position: absolute;
 }
+#banner-logo {
+    position: absolute;
+}
 #banner-tagline {
     position: absolute;
     padding: 10px;
@@ -91,6 +94,7 @@ section blockquote {
     border-left: 1px inset #aaa;
     border-right: 1px inset #aaa;
     box-shadow: 10px 10px 25px -9px rgba(0,0,0,0.75);
+    max-width: 660px;
 }
 #logo-mini {
     margin-right: 5px;
@@ -100,6 +104,9 @@ section blockquote {
 #logo-mini img {
     margin: 5px 0px 0px 0px;
     vertical-align: middle;
+}
+.jumbotron {
+    padding: 0px;
 }
 
 /* min-width: 768 */
