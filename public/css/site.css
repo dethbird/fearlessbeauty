@@ -27,7 +27,7 @@ blockquote {
     min-height: 500px;
     background-color: white;
     color: #444;
-    padding: 0px 43px 0px 43px;
+    padding: 0px 43px 50px 43px;
 }
 .container.contentBody p {
     margin: 15px;
@@ -106,7 +106,16 @@ section blockquote {
     vertical-align: middle;
 }
 .jumbotron {
-    padding: 0px;
+    padding: 5px;
+}
+
+
+#content-graduates div.col-xs-6:nth-child(odd) {
+  float:left;
+}
+#content-graduates div.col-xs-6:nth-child(even) {
+  clear: both;
+  float:right;
 }
 
 /* min-width: 768 */

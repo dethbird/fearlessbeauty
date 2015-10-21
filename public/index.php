@@ -100,5 +100,18 @@ $app->get("/contact", $authenticate($app), function () use ($app) {
     );
 });
 
+$app->get("/graduates", $authenticate($app), function () use ($app) {
+
+    $configs = $app->container->get('configs');
+    $app->render(
+        'partials/graduates.html.twig',
+        array(
+            "configs" => $configs,
+            "section" => "graduates"
+        ),
+        200
+    );
+});
+
 
 $app->run();

@@ -330,8 +330,8 @@ $(document).ready(function(){
 
 
     $(window).resize($.debounce(350, function(e){
-      youtubeViewer.render();
-      embedCodeViewer.render();
+      // youtubeViewer.render();
+      // embedCodeViewer.render();
     }));
 
 });
