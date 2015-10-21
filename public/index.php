@@ -56,17 +56,19 @@ $app->get("/", $authenticate($app), function () use ($app) {
     // apc_clear_cache();
 
     $configs = $app->container->get('configs');
-    $youtubeData = new YoutubeData($configs['google_api']['key']);
+    // $youtubeData = new YoutubeData($configs['google_api']['key']);
     $wordpressData = new WordpressData($configs['wordpress_blog']['base_url']);
+    $instagramData = new InstagramData($configs['instagram']['client_id']);
     $app->render(
         'partials/index.html.twig',
         array(
             "configs" => $configs,
             "section" => "home",
             "embedCodes" => $configs['featured']['videos']['embed_codes'],
-            "youtubeVideos" => $youtubeData->getVideos($configs['featured']['videos']['youtube']),
-            "embedCodeVideos" => $configs['featured']['videos']['embed_codes'],
-            "wordpressPosts" => $wordpressData->getPosts($configs['featured']['blogs']['wordpress'])
+            // "youtubeVideos" => $youtubeData->getVideos($configs['featured']['videos']['youtube']),
+            // "embedCodeVideos" => $configs['featured']['videos']['embed_codes'],
+            "wordpressPosts" => $wordpressData->getPosts($configs['featured']['blogs']['wordpress']),
+            "instagramData" => $instagramData->getRecentMedia($configs['instagram']['user_id'], 6, 350)
         ),
         200
     );

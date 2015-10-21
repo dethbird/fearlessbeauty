@@ -18,17 +18,22 @@
       <br />
       <div class="jumbotron"><h2>Fearless Beauty empowers underprivileged women. By providing education and mentorship, we are building communities founded in mindfulness, support, and inclusivity. Fearless women will create a sustainable income for themselves using beauty as a tool to liberate and heal.</h2></div>
 
-        <div class="col-xs-6">
+        <div class="col-xs-4">
+            <h1>On Instagram</h1>
+            <section id="instagramFeed">
+              {% for instagram in instagramData %}
+                {{instagram.html|raw}}<br />
+              {% endfor %}
+            </section>
 
-
-            <h1>Featured Videos</h1>
+            <!-- <h1>Featured Videos</h1>
             <section id="embedCodeVideos"></section>
             <h1>Interview Videos</h1>
-            <section id="youtubeVideos"></section>
+            <section id="youtubeVideos"></section> -->
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-8">
 
-            <h1>From Our Blog</h1>
+            <h1>Recent Updates</h1>
             <section id="wordpressPosts"></section>
         </div>
     </div>

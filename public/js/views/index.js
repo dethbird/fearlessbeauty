@@ -312,13 +312,13 @@ var ImageRotatorWithTaglineView = Backbone.View.extend({
 
 
 $(document).ready(function(){
-    var youtubeViewer = new YoutubeVideoView({
-      el: $('section#youtubeVideos')
-    });
+    // var youtubeViewer = new YoutubeVideoView({
+    //   el: $('section#youtubeVideos')
+    // });
 
-    var embedCodeViewer = new EmbedCodeVideoView({
-      el: $('section#embedCodeVideos')
-    });
+    // var embedCodeViewer = new EmbedCodeVideoView({
+    //   el: $('section#embedCodeVideos')
+    // });
 
     var wordpressViewer = new WordpressPostView({
       el: $('section#wordpressPosts')
