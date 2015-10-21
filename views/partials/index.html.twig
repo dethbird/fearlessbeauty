@@ -29,12 +29,15 @@
             <section id="wordpressPosts"></section>
         </div>
     </div>
+
+    <!-- TEMPLATES -->
     <script type="text/template" id="post-youtubeVideos">
       <div class="card youtube">
         <iframe width="<%-width%>" height="<%-height%>" src="https://www.youtube.com/embed/<%-id%>" frameborder="0" allowfullscreen></iframe>
         <blockquote><%-data.snippet.description%></blockquote>
       </div>
     </script>
+
     <script type="text/template" id="post-wordpressPosts">
       <div class="card wordpress">
         <h2><%=data.title.rendered%></h2>
@@ -49,5 +52,10 @@
         <p><a class="btn btn-default btn-sm pull-right" href="<%-data.link%>" target="_blank"><img src="img/logo-wordpress-24.png" /> View</a></p>
       </div><br />
     </script>
+
+    <script type="text/template" id="template-banner-tagline">
+      <div id="banner-tagline"><button class="btn btn-lg btn-success pull-right donate"><span class="glyphicon glyphicon-gift"></span> Donate</button> <p>Teaching fundamental skills in one of the great crafts empowers people.<br /> When those people are underprivileged women, it has the power to change their lives.</p></div>
+    </script>
+
 {% endblock %}
 
