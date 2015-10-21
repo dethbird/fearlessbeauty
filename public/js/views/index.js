@@ -165,6 +165,69 @@ var WordpressPostView = Backbone.View.extend({
   }
 });
 
+var imagesToRotateData = [
+  {
+    url: "img/rotator/001.jpg"
+  },
+  {
+    url: "img/rotator/002.jpg"
+  },
+  {
+    url: "img/rotator/003.jpg"
+  },
+  {
+    url: "img/rotator/004.jpg"
+  }
+];
+
+var imagesToRotate = new Backbone.Collection(imagesToRotateData);
+
+
+var ImageRotatorWithTaglineView = Backbone.View.extend({
+  name: "ImageRotatorWithTaglineView",
+  collection: imagesToRotate,
+  currentModel: null,
+  initialize: function() {
+    // console.log(this.collection);
+    var that = this;
+
+    // load the images, trigger when they are all loaded
+    var imagesLoadedCount = 0;
+    $.each(this.collection.models, function(i,model) {
+      var img = $('<img />');
+      img.attr('src', model.get('url'));
+      img.attr('id', i + 1);
+      model.set('id', i+1);
+      model.set('image', img);
+      img.css('z-index', 1000 + this.collection.models.length - i);
+      img.addClass('hidden');
+      $(that.el).append(img);
+      if(i==0){
+        that.currentModel = model;
+        img.removeClass('hidden');
+      }
+    });
+    this.render();
+  },
+  render: function() {
+    setInterval(_.bind(function(){
+      this.nextImage();
+    }, this), 5000);
+  },
+  nextImage: function() {
+    var index = this.currentModel.get('id');
+    index++;
+    if(index > this.collection.models.length) {
+      index = 1;
+    }
+    this.currentModel = this.collection.models[index-1];
+    $.each(this.collection.models, function(i,model){
+      model.get('image').addClass('hidden');
+    });
+    this.currentModel.get('image').removeClass('hidden');
+  }
+});
+
 
 $(document).ready(function(){
     var youtubeViewer = new YoutubeVideoView({
@@ -178,6 +241,11 @@ $(document).ready(function(){
     var wordpressViewer = new WordpressPostView({
       el: $('section#wordpressPosts')
     });
+
+    var imageRotateWithTaglineViewer = new ImageRotatorWithTaglineView({
+      el: $('#home-header')
+    });
+
 
     $(window).resize($.debounce(350, function(e){
       youtubeViewer.render();
