@@ -113,5 +113,11 @@ $app->get("/graduates", $authenticate($app), function () use ($app) {
     );
 });
 
+$app->get("/clearcache", $authenticate($app), function () use ($app) {
+    exec("rm -rf " . APPLICATION_PATH . "/cache/*");
+    echo "cache cleared";
+    $app->redirect('/');
+});
+
 
 $app->run();

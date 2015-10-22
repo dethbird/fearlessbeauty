@@ -6,7 +6,6 @@ body {
     margin-bottom: 100px;
     text-shadow: 1px 3px 2px rgba(0,0,0,0.10);
     background-color: #d10841;
-    /*background-color: #444;*/
     font-family: 'Magra', sans-serif;
 }
 blockquote {
@@ -51,7 +50,7 @@ ul.nav button {
     margin-top: 10px;
 }
 h1,h2,h3,h4,h5 {
-    font-family: 'Neuton', serif;
+    font-family: 'Magra', sans-serif;
     font-weight: bold;
     color: #f9af3a;
     clear: both;
@@ -95,6 +94,7 @@ section blockquote {
     border-right: 1px inset #aaa;
     box-shadow: 10px 10px 25px -9px rgba(0,0,0,0.75);
     max-width: 660px;
+    text-align: center;
 }
 #logo-mini {
     margin-right: 5px;
@@ -118,20 +118,27 @@ section blockquote {
   float:right;
 }
 
+.created_by,
+.created_by a {
+    font-size: 12px;
+    color: #666;
+}
+
 /* min-width: 768 */
 @media screen and (min-width:0px) {
     section img {
         max-width: 302px;
         height: auto;
     }
+    #home-header img.rotator {
+        width: 750px;
+        height: auto;
+    }
     #home-header {
         width: 750px;
-        height: 499px;
-        /*background-image: url('../img/768/home.header.background.jpg');*/
-        /*background-image: url('http://lorempixel.com/g/1170/779/food/');*/
-        background-repeat: no-repeat;
-        /*padding: 0px 43px 0px 43px;*/
+        height: 449px;
     }
+
     #banner-tagline {
         font-size: 16px;
         top: 190px;
@@ -143,7 +150,6 @@ section blockquote {
         margin: 17px 0px 0px 0px;
         width: 460px;
         height: 165px;
-        /*background-image: url('../img/768/logo-main.png');*/
         background-repeat: no-repeat;
     }
 
@@ -155,13 +161,13 @@ section blockquote {
         max-width: 442px;
         height: auto;
     }
+    #home-header img.rotator {
+        width: 970px;
+        height: auto;
+    }
     #home-header {
         width: 970px;
-        height: 646px;
-        /*background-image: url('../img/992/home.header.background.jpg');*/
-        /*background-image: url('http://lorempixel.com/g/1170/779/food/');*/
-        background-repeat: no-repeat;
-        /*padding: 0px 43px 0px 43px;*/
+        height: 580px;
     }
     #banner-tagline {
         position: absolute;
@@ -176,22 +182,18 @@ section blockquote {
         margin: 17px 0px 0px 0px;
         width: 564px;
         height: 202px;
-        /*background-image: url('../img/992/logo-main.png');*/
         background-repeat: no-repeat;
     }
 }
 @media screen and (min-width:1200px) {
     section img {
-        max-width: 512px;
+        max-width: 700px;
         height: auto;
     }
+    #home-header img.rotator,
     #home-header {
         width: 1170px;
         height: 700px;
-        /*background-image: url('../img/1200/home.header.background.jpg');*/
-        /*background-image: url('http://lorempixel.com/g/1170/779/food/');*/
-        background-repeat: no-repeat;
-        /*padding: 0px 43px 0px 43px;*/
     }
     #banner-tagline {
         font-size: 24px;
@@ -201,22 +203,10 @@ section blockquote {
         margin: 17px 0px 0px 0px;
         width: 679px;
         height: 243px;
-        /*background-image: url('../img/1200/logo-main.png');*/
         background-repeat: no-repeat;
     }
 }
 
-
-/* Generated with Bounce.js. Edit at http://goo.gl/88h3ao */
-
-
-
-.animation-target {
-  -webkit-animation: animation 1000ms linear both;
-  animation: animation 1000ms linear both;
-}
-
-/* Generated with Bounce.js. Edit at http://goo.gl/FY2f1w */
 
 @-webkit-keyframes anim-scale-to-1 {
   0% { -webkit-transform: matrix3d(0.85, 0, 0, 0, 0, 0.85, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.85, 0, 0, 0, 0, 0.85, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }

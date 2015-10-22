@@ -90,7 +90,7 @@
           <li><a href="{{ configs.wordpress_blog.base_url}}" target="_blank">Blog</a></li>
           <!-- <li><a href="https://www.youtube.com/channel/UCTL0-B7GL1wQfcAP2bepTig" target="_blank">Videos</a></li> -->
           <li {% if section=="contact" %}class="active"{% endif %}><a href="/contact">Contact</a></li>
-          <li><button class="btn btn-success btn-sm donate"><span class="glyphicon glyphicon-gift"></span> Donate</button></li>
+          <li><button class="btn btn-success btn-sm donate"><!-- <span class="glyphicon glyphicon-gift"></span> --> Donate</button></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -99,7 +99,7 @@
     {% block body %}{% endblock %}
     <nav class="navbar navbar-inverse footer">
       <div class="container contentFooter">
-          &copy 2015 Fearless Beauty
+          &copy 2015 Fearless Beauty <span class="created_by">Created by <a href="http://dethbird.com" target="_blank">@dethbird</a></span>
       </div>
     </nav>
   </div>

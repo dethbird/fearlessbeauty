@@ -17,8 +17,9 @@ featured:
         <script type="text/javascript" charset="UTF-8" src="http://www.nbcnewyork.com/portableplayer/?cmsID=279636812&videoID=ZuMzlOULpTKI&origin=nbcnewyork.com&sec=on-air&subsec=as-seen-on&width=500&height=360"></script>
   blogs:
     wordpress:
+      - 814
       - 794
-      - 121
+      # - 121
       - 778
   press:
     -

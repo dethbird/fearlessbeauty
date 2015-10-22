@@ -129,6 +129,7 @@ var WordpressPostCollection = PostCollection.extend({
     this.parse(this.posts);
   },
   parse: function(data) {
+    console.log(data);
     that = this;
     _.each(data, function(d){
       var model = new Post({
@@ -166,16 +167,29 @@ var WordpressPostView = Backbone.View.extend({
 });
 
 var imagesToRotateData = [
+  // {
+  //   url: "img/rotator/001.jpg",
+  //   tagline: {
+  //      top: 550,
+  //      left: 450
+  //   },
+  //   logo: {
+  //     top: 5,
+  //     left: 15,
+  //     scale: 0.9
+  //   }
+  // },
+  //
   {
-    url: "img/rotator/001.jpg",
+    url: "img/rotator/003.jpg",
     tagline: {
-       top: 550,
-       left: 450
+      top: 580,
+      left: 50
     },
     logo: {
-      top: 5,
-      left: 15,
-      scale: 0.9
+      top: -25,
+      left: 470,
+      scale: 0.7
     }
   },
   {
@@ -191,18 +205,6 @@ var imagesToRotateData = [
     }
   },
   {
-    url: "img/rotator/003.jpg",
-    tagline: {
-      top: 580,
-      left: 50
-    },
-    logo: {
-      top: -25,
-      left: 470,
-      scale: 0.7
-    }
-  },
-  {
     url: "img/rotator/004.jpg",
     tagline: {
        top: 580,
@@ -213,7 +215,7 @@ var imagesToRotateData = [
       left: -75,
       scale: 0.6
     }
-  }
+  },
 ];
 
 var imagesToRotate = new Backbone.Collection(imagesToRotateData);
@@ -236,6 +238,7 @@ var ImageRotatorWithTaglineView = Backbone.View.extend({
       model.set('id', i+1);
       model.set('image', img);
       img.css('z-index', 1000 + this.collection.models.length - i);
+      img.addClass('rotator');
       $(that.el).append(img);
       if(i!=0){
         img.fadeOut(0);

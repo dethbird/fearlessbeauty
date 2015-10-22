@@ -49,20 +49,24 @@
     <script type="text/template" id="post-wordpressPosts">
       <div class="card wordpress">
         <h2><%=data.title.rendered%></h2>
-        <% if (data.featured_image.media_details) { %>
-          <% if (data.featured_image.media_details.sizes['post-thumbnail']) { %>
-            <img src="<%-data.featured_image.media_details.sizes['post-thumbnail'].source_url%>" />
-          <% } else { %>
-            <img src="<%-data.featured_image.source_url%>" />
+        <% if (data.format=="status") { %>
+          <%=data.content.rendered%>
+        <% } else { %>
+          <% if (data.featured_image.media_details) { %>
+            <% if (data.featured_image.media_details.sizes['post-thumbnail']) { %>
+              <img src="<%-data.featured_image.media_details.sizes['post-thumbnail'].source_url%>" />
+            <% } else { %>
+              <img src="<%-data.featured_image.source_url%>" />
+            <% } %>
           <% } %>
+          <blockquote><%=data.excerpt.rendered%></blockquote>
         <% } %>
-        <blockquote><%=data.excerpt.rendered%></blockquote>
         <p><a class="btn btn-default btn-sm pull-right" href="<%-data.link%>" target="_blank"><img src="img/logo-wordpress-24.png" /> View</a></p>
       </div><br />
     </script>
 
     <script type="text/template" id="template-banner">
-      <div id="banner-tagline"><button class="btn btn-lg btn-success pull-right donate"><span class="glyphicon glyphicon-gift"></span> Donate</button> <p>Empowering women in need with the tools to create a fulfilling livelihood though the power of beauty</p></div>
+      <div id="banner-tagline"><!--<button class="btn btn-lg btn-success pull-right donate"><span class="glyphicon glyphicon-gift"></span> Donate</button> --><p>Empowering women in need with the tools to create a fulfilling livelihood though the power of beauty</p></div>
       <img id="banner-logo" src="img/1200/logo-main.png"/>
     </script>
 
