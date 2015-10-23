@@ -225,7 +225,7 @@ var ImageRotatorWithTaglineView = Backbone.View.extend({
   render: function() {
     setInterval(_.bind(function(){
       this.nextImage();
-    }, this), 10000);
+    }, this), 8000);
   },
   nextImage: function() {
     var that = this;
