@@ -129,7 +129,6 @@ var WordpressPostCollection = PostCollection.extend({
     this.parse(this.posts);
   },
   parse: function(data) {
-    console.log(data);
     that = this;
     _.each(data, function(d){
       var model = new Post({
@@ -167,54 +166,20 @@ var WordpressPostView = Backbone.View.extend({
 });
 
 var imagesToRotateData = [
-  // {
-  //   url: "img/rotator/001.jpg",
-  //   tagline: {
-  //      top: 550,
-  //      left: 450
-  //   },
-  //   logo: {
-  //     top: 5,
-  //     left: 15,
-  //     scale: 0.9
-  //   }
-  // },
-  //
   {
-    url: "img/rotator/003.jpg",
-    tagline: {
-      top: 580,
-      left: 50
-    },
-    logo: {
-      top: -25,
-      left: 470,
-      scale: 0.7
-    }
+    taglineClassName: 'image-rotator-tagline-03',
+    logoClassName: 'image-rotator-logo-03',
+    url: "img/rotator/003.jpg"
   },
   {
-    url: "img/rotator/002.jpg",
-    tagline: {
-       top: 580,
-       left: 450
-    },
-    logo: {
-      top: -10,
-      left: -75,
-      scale: 0.6
-    }
+    taglineClassName: 'image-rotator-tagline-02',
+    logoClassName: 'image-rotator-logo-02',
+    url: "img/rotator/002.jpg"
   },
   {
-    url: "img/rotator/004.jpg",
-    tagline: {
-       top: 580,
-       left: 450
-    },
-    logo: {
-      top: -10,
-      left: -75,
-      scale: 0.6
-    }
+    taglineClassName: 'image-rotator-tagline-04',
+    logoClassName: 'image-rotator-logo-04',
+    url: "img/rotator/004.jpg"
   },
 ];
 
@@ -232,14 +197,17 @@ var ImageRotatorWithTaglineView = Backbone.View.extend({
     // load the images, trigger when they are all loaded
     var imagesLoadedCount = 0;
     $.each(this.collection.models, function(i,model) {
+
       var img = $('<img />');
       img.attr('src', model.get('url'));
-      img.attr('id', i + 1);
-      model.set('id', i+1);
-      model.set('image', img);
+      img.attr('id', i+1);
       img.css('z-index', 1000 + this.collection.models.length - i);
       img.addClass('rotator');
       $(that.el).append(img);
+
+      model.set('image', img);
+      model.set('id', i+1);
+
       if(i!=0){
         img.fadeOut(0);
       } else {
@@ -249,31 +217,15 @@ var ImageRotatorWithTaglineView = Backbone.View.extend({
     var template = _.template($("#template-banner").html());
     $(that.el).append( template({}, {escape: false}) );
 
-    $('#banner-tagline').css('z-index', 1000 + this.collection.models.length + 1);
-    $('#banner-tagline').css('top', (that.currentModel.get('tagline').top));
-    $('#banner-tagline').css('left', (that.currentModel.get('tagline').left));
-
-    $('#banner-logo').css('z-index', 1000 + this.collection.models.length + 2);
-    // $('#banner-logo').css('top', (that.currentModel.get('logo').top));
-    // $('#banner-logo').css('left', (that.currentModel.get('logo').left));
-    // $('#banner-logo').css('scale', (that.currentModel.get('logo').scale));
-     var logoTween = TweenMax.to(
-      $('#banner-logo'),
-      0,
-      {
-        left: this.currentModel.get('logo').left,
-        top: this.currentModel.get('logo').top,
-        scale: this.currentModel.get('logo').scale,
-        ease:Expo.easeOut
-      }
-    );
+    $('#banner-tagline').css('z-index', 1000 + this.collection.models.length + 1).addClass(this.currentModel.get('taglineClassName'));
+    $('#banner-logo').css('z-index', 1000 + this.collection.models.length + 2).addClass(this.currentModel.get('logoClassName'));
 
     this.render();
   },
   render: function() {
     setInterval(_.bind(function(){
       this.nextImage();
-    }, this), 8000);
+    }, this), 10000);
   },
   nextImage: function() {
     var that = this;
@@ -286,25 +238,21 @@ var ImageRotatorWithTaglineView = Backbone.View.extend({
     $.each(this.collection.models, function(i,model){
       model.get('image').fadeOut(500, function(){
         if(model.get('id')==that.currentModel.get('id')) {
+
           that.currentModel.get('image').fadeIn(1000);
-          $('#banner-tagline').css('top', model.get('tagline').top);
+
           var taglineTween = TweenMax.to(
             $('#banner-tagline'),
             2,
             {
-              left: that.currentModel.get('tagline').left,
-              top: that.currentModel.get('tagline').top,
-              ease:Expo.easeOut
+              className: model.get('taglineClassName')
             }
           );
           var logoTween = TweenMax.to(
             $('#banner-logo'),
             2,
             {
-              left: that.currentModel.get('logo').left,
-              top: that.currentModel.get('logo').top,
-              scale: that.currentModel.get('logo').scale,
-              ease:Expo.easeOut
+              className: model.get('logoClassName')
             }
           );
         }

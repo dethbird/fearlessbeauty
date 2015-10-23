@@ -126,6 +126,9 @@ section blockquote {
 
 /* min-width: 768 */
 @media screen and (min-width:0px) {
+    h1 {
+      font-size: 24px;
+    }
     section img {
         max-width: 302px;
         height: auto;
@@ -140,8 +143,7 @@ section blockquote {
     }
 
     #banner-tagline {
-        font-size: 16px;
-        top: 190px;
+        font-size: 20px;
     }
     #home-info p {
         width: 500px;
@@ -152,11 +154,41 @@ section blockquote {
         height: 165px;
         background-repeat: no-repeat;
     }
+    .image-rotator-logo-03 {
+      top: -30px;
+      left: -115px;
+      transform: scale(0.55, 0.55);
+    }
+    .image-rotator-logo-02 {
+      top: -30px;
+      left: -115px;
+      transform: scale(0.55, 0.55);
+    }
+    .image-rotator-logo-04 {
+      top: -30px;
+      left: -115px;
+      transform: scale(0.55, 0.55);
+    }
+    .image-rotator-tagline-03 {
+      top: 350px;
+      left: 50px;
+    }
+    .image-rotator-tagline-02 {
+      top: 350px;
+      left: 50px;
+    }
+    .image-rotator-tagline-04 {
+      top: 350px;
+      left: 50px;
+    }
 
 }
 
 
 @media screen and (min-width:992px) {
+    h1 {
+      font-size: 30px;
+    }
     section img {
         max-width: 442px;
         height: auto;
@@ -170,9 +202,7 @@ section blockquote {
         height: 580px;
     }
     #banner-tagline {
-        position: absolute;
         font-size: 20px;
-        top: 315px;
     }
 
     #home-info p {
@@ -183,6 +213,33 @@ section blockquote {
         width: 564px;
         height: 202px;
         background-repeat: no-repeat;
+    }
+    .image-rotator-logo-03 {
+      top: -10px;
+      left: -40px;
+      transform: scale(0.83, 0.83);
+    }
+    .image-rotator-logo-02 {
+      top: -10px;
+      left: -40px;
+      transform: scale(0.83, 0.83);
+    }
+    .image-rotator-logo-04 {
+      top: -10px;
+      left: -40px;
+      transform: scale(0.83, 0.83);
+    }
+    .image-rotator-tagline-03 {
+      top: 470px;
+      left: 160px;
+    }
+    .image-rotator-tagline-02 {
+      top: 470px;
+      left: 160px;
+    }
+    .image-rotator-tagline-04 {
+      top: 470px;
+      left: 160px;
     }
 }
 @media screen and (min-width:1200px) {
@@ -197,13 +254,36 @@ section blockquote {
     }
     #banner-tagline {
         font-size: 24px;
-        top: 390px;
     }
     #logo-main {
         margin: 17px 0px 0px 0px;
         width: 679px;
         height: 243px;
         background-repeat: no-repeat;
+    }
+    .image-rotator-logo-03 {
+      top: 0px;
+      left: 0px;
+    }
+    .image-rotator-logo-02 {
+      top: 0px;
+      left: 0px;
+    }
+    .image-rotator-logo-04 {
+      top: 0px;
+      left: 0px;
+    }
+    .image-rotator-tagline-03 {
+      top: 570px;
+      left: 275px;
+    }
+    .image-rotator-tagline-02 {
+      top: 570px;
+      left: 275px;
+    }
+    .image-rotator-tagline-04 {
+      top: 570px;
+      left: 275px;
     }
 }
 
