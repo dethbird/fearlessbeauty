@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/site.css">
     <link href='https://fonts.googleapis.com/css?family=Magra' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Neuton:400,700' rel='stylesheet' type='text/css'>
 
     <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
@@ -83,12 +84,6 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li {% if section=="home" %}class="active"{% endif %}><a href="/">Home</a></li>
-          <li {% if section=="about" %}class="active"{% endif %}><a href="/about">About</a></li>
-          <li {% if section=="graduates" %}class="active"{% endif %}><a href="/graduates">Our Graduates</a></li>
-          <li><a href="{{ configs.wordpress_blog.base_url}}" target="_blank">Blog</a></li>
-          <!-- <li><a href="https://www.youtube.com/channel/UCTL0-B7GL1wQfcAP2bepTig" target="_blank">Videos</a></li> -->
-          <li {% if section=="contact" %}class="active"{% endif %}><a href="/contact">Contact</a></li>
           <li><button class="btn btn-success btn-sm donate"><!-- <span class="glyphicon glyphicon-gift"></span> --> Donate</button></li>
         </ul>
       </div><!--/.nav-collapse -->
