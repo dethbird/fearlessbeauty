@@ -84,12 +84,14 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
+          {% if configs.under_construction!=true %}
           <li {% if section=="home" %}class="active"{% endif %}><a href="/">Home</a></li>
           <li {% if section=="about" %}class="active"{% endif %}><a href="/about">About</a></li>
           <li {% if section=="graduates" %}class="active"{% endif %}><a href="/graduates">Our Graduates</a></li>
           <li><a href="{{ configs.wordpress_blog.base_url}}" target="_blank">Blog</a></li>
           <!-- <li><a href="https://www.youtube.com/channel/UCTL0-B7GL1wQfcAP2bepTig" target="_blank">Videos</a></li> -->
           <li {% if section=="contact" %}class="active"{% endif %}><a href="/contact">Contact</a></li>
+          {% endif %}
           <li><button class="btn btn-success btn-sm donate"><!-- <span class="glyphicon glyphicon-gift"></span> --> Donate</button></li>
         </ul>
       </div><!--/.nav-collapse -->
